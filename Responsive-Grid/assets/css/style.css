@@ -1,0 +1,97 @@
+:root{
+    /*degisken olusturma*/
+    --kirmiziRenk:red;
+    --bg-color:rgb(241,178,5);
+    --box-100:100%;
+    --box-50:50%;
+}
+.container{
+    background-color: var(--kirmiziRenk);
+    height: 100vh;
+    width: var(--box-100);
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(11,1fr);
+    
+}
+
+.container .header{
+    grid-column: 1/12;
+    background-color: rgb(34, 180, 107);
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    
+}
+.container .header .logo{
+    grid-column: 1/3;
+    background-color: purple;
+    height: 100px;
+}
+.container .header .menu{
+    grid-column: 3/12;
+    height: 100px;
+    background-color: orange;
+    
+
+}
+
+.container .main{
+    grid-column: 1/12;
+    background-color:aqua;
+    
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(11,1fr);
+    
+}
+ 
+.container .main .banner{
+    grid-column: 1/12;
+    background-color: chocolate;
+    height: 100px;
+} 
+
+.container .main .content{
+    grid-column: 1/12;
+    background-color: crimson;
+  
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    display: grid;
+} 
+.container .main .content .content-item{
+    
+    background-color: darkgreen;
+    height: 200px;
+   
+} 
+
+.container .footer{
+    grid-column: 1/12;
+    background-color: aliceblue;
+    height: 250px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+}
+
+.container .footer .footer-item{
+    background-color: aquamarine;
+    height: 250px;
+}
+@media screen and (max-width:1000px){
+    .container .main .content{
+        grid-template-columns: repeat(2,1fr
+        );
+    }
+}
+@media screen and (max-width:600px){
+    .container .main .content{
+        grid-template-columns: repeat(1,1fr
+        );
+    }
+}
+
+

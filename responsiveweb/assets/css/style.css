@@ -1,0 +1,74 @@
+
+body{
+    margin: 0;
+}
+.gunes{
+    width: 150px;
+    height: 150px;
+    animation: don 5s infinite linear;
+    position: relative;
+    left: 280px;
+    top: 280px;
+    border-radius: 50%;
+
+}
+.gunes img{
+    
+ border-radius: 50%;
+}
+.image-fluid{
+    width: 100%;
+
+}
+.dunya{
+    width: 70px;
+    height: 70px;
+    animation: don 5s infinite linear;
+    position: relative;
+    left: 260px;
+    top: -37.5px;
+
+}
+
+.dunya-rota{
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: black dashed 3px;
+    position: relative;
+    left: 50px;
+    top: -100px;
+    animation: don 5s infinite linear;
+    
+}
+.ay{
+    
+    animation: don 10s infinite linear;
+    position: relative;
+    left: 100px;
+    top: -50px;
+
+}
+.ay img{
+    width: 20px;
+    border-radius: 50%;
+}
+.ay-rota{
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 70%;
+    border: black solid 3px;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    animation: don 10s infinite linear;
+    
+}
+
+@keyframes don{
+    100%{
+        transform: rotate(360deg);
+    }
+}
